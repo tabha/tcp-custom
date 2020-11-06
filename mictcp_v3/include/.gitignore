@@ -1,0 +1,7 @@
+*.o
+client
+gateway
+server
+tsock_texte
+tsock_video
+video/*
