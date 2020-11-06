@@ -13,7 +13,7 @@ int portsOccupe[NUM_PORT_MAX];
 int nbOccuppe ;
 
 /*
-
+check if a port number is free
 */
 int isOccuped(int port){
   for(int i=0;i<nbOccuppe;i++){
@@ -38,8 +38,8 @@ int random_port(){
 }
 
 /*
- * Permet de créer un socket entre l’application et MIC-TCP
- * Retourne le descripteur du socket ou bien -1 en cas d'erreur
+ * Allows to create a socket between the application and MIC-TCP
+ * Returns the socket descriptor or -1 in case of error
  */
 int mic_tcp_socket(start_mode sm)
 {
@@ -58,8 +58,8 @@ int mic_tcp_socket(start_mode sm)
 }
 
 /*
- * Permet d’attribuer une adresse à un socket.
- * Retourne 0 si succès, et -1 en cas d’échec
+ * Allows you to assign an address to a socket.
+ * Returns 0 if successful, and -1 if unsuccessful.
  */
 int mic_tcp_bind(int socket, mic_tcp_sock_addr addr)
 {
@@ -72,8 +72,8 @@ int mic_tcp_bind(int socket, mic_tcp_sock_addr addr)
    return -1;
 }
 /*
- * Met le socket en état d'acceptation de connexions
- * Retourne 0 si succès, -1 si erreur
+ * Puts the socket in a connection acceptance state
+ * Returns 0 if successful, -1 if error
  */
 int mic_tcp_accept(int socket, mic_tcp_sock_addr* addr)
 {
@@ -87,8 +87,8 @@ int mic_tcp_accept(int socket, mic_tcp_sock_addr* addr)
 }
 
 /*
- * Permet de réclamer l’établissement d’une connexion
- * Retourne 0 si la connexion est établie, et -1 en cas d’échec
+ * Allows you to request a connection to be established
+ * Returns 0 if the connection is established, and -1 if it fails.
  */
 int mic_tcp_connect(int socket, mic_tcp_sock_addr addr)
 {
@@ -109,8 +109,8 @@ int mic_tcp_connect(int socket, mic_tcp_sock_addr addr)
 }
 
 /*
- * Permet de réclamer l’envoi d’une donnée applicative
- * Retourne la taille des données envoyées, et -1 en cas d'erreur
+ * Allows to request the sending of an application data
+ * Returns the size of the data sent, and -1 in case of error
  */
 
  int mic_tcp_send (int socket, char* mesg, int mesg_size){
@@ -162,10 +162,10 @@ int mic_tcp_connect(int socket, mic_tcp_sock_addr addr)
    return -1;
  }
 /*
- * Permet à l’application réceptrice de réclamer la récupération d’une donnée
- * stockée dans les buffers de réception du socket
- * Retourne le nombre d’octets lu ou bien -1 en cas d’erreur
- * NB : cette fonction fait appel à la fonction app_buffer_get()
+ * Allows the receiving application to request data recovery
+ * stored in the socket's receive buffers
+ * Returns the number of bytes read or -1 in case of error
+ * NB: this function calls the app_buffer_get() function.
  */
 int mic_tcp_recv (int socket, char* mesg, int max_mesg_size)
 {
@@ -183,9 +183,9 @@ int mic_tcp_recv (int socket, char* mesg, int max_mesg_size)
     return taille_lu;
 }
 /*
- * Permet de réclamer la destruction d’un socket.
- * Engendre la fermeture de la connexion suivant le modèle de TCP.
- * Retourne 0 si tout se passe bien et -1 en cas d'erreur
+ * Allows to request the destruction of a socket.
+ * Causes the connection to be closed according to the TCP model.
+ * Returns 0 if all goes well and -1 in case of error.
  */
  int mic_tcp_close (int socket)
  {
@@ -197,9 +197,9 @@ int mic_tcp_recv (int socket, char* mesg, int max_mesg_size)
      return -1;
  }
 /*
- * Traitement d’un PDU MIC-TCP reçu (mise à jour des numéros de séquence
- * et d'acquittement, etc.) puis insère les données utiles du PDU dans
- * le buffer de réception du socket. Cette fonction utilise la fonction
+ * Processing of a received MIC-TCP PDU (update of sequence numbers)
+ * and acknowledgement, etc.) and then inserts the PDU user data in the
+ * the socket's receive buffer. This function uses the
  * app_buffer_put().
  */
 void process_received_PDU(mic_tcp_pdu pdu, mic_tcp_sock_addr addr)
