@@ -288,5 +288,5 @@ For copyright notice please read [COPYRIGHT.txt](https://github.com/danpros/html
 
 **Versions**
 --------------
-**Version 1**
+**Version 1 (une phase de transfert de données sans garantie de fiabilité)**
  the first version implements a no-loss recovery version. Thus any packet lost during the transmission phase will not be retransmitted.
