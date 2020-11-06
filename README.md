@@ -284,3 +284,9 @@ Contributors
 Copyright / License
 -------------------
 For copyright notice please read [COPYRIGHT.txt](https://github.com/danpros/htmly/blob/master/COPYRIGHT.txt). HTMLy is licensed under the GNU General Public License Version 2.0 (or later).
+
+
+**Versions**
+--------------
+**Version 1**
+ the first version implements a no-loss recovery version. Thus any packet lost during the transmission phase will not be retransmitted.
