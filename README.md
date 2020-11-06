@@ -293,4 +293,4 @@ For copyright notice please read [COPYRIGHT.txt](https://github.com/danpros/html
 -the first version implements a no-loss recovery version. Thus any packet lost during the transmission phase will not be retransmitted.
 
 **Version 2**
----une garantie de fiabilité totale via un mécanisme de reprise des pertes de type « Stop and Wait »
+--In version two, we are interested in an implementation that guarantees total reliability via a "Stop and Wait" type loss recovery mechanism.
