@@ -14,20 +14,6 @@ Features
 
 **Featured quote**
 
-Post with featured quote.
-```html
-<!--quote Premature Optimization is The Root of All Evil quote-->
-````
-
-**Example**
-
-Example of how your post would look like:
-```html
-<!--t Here is the post title t-->
-<!--d The meta description d-->
-<!--tag Tag1,Tag2 tag-->
-<!--video https://www.youtube.com/watch?v=xxxxxxx video-->
-
 **Versions**
 --------------
 
