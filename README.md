@@ -1,60 +1,17 @@
-<a href="https://www.htmly.com" target="_blank">![Logo](https://raw.githubusercontent.com/danpros/htmly/master/system/resources/images/logo-big.png)</a>
 
-HTMLy is an open source Databaseless Blogging Platform or Flat-File Blog prioritizes simplicity and speed written in PHP. HTMLy can be referred to as Flat-File CMS either since it will also manage your content.
-
-You do not need to use a VPS to run HTMLy, shared hosting or even free hosting should work as long as the host supports at least PHP 5.3.
 
 Demo
 ----
-Visit <a href="https://demo.htmly.com" target="_blank">HTMLy demo</a> as blog.
 
 Features
 ---------
-- Admin Panel
-- Markdown editor with live preview and image upload
-- Categorization with category and tags (multiple tagging support)
-- Static Pages (e.g. Contact Page, About Page)
-- Meta canonical, description, and rich snippets for SEO
-- Pagination
-- Author Page
-- Multi author support
-- Social Links
-- Disqus Comments (optional)
-- Facebook Comments (optional)
-- Google Analytics
-- Built-in Search
-- Related Posts
-- Per Post Navigation (previous and next post)
-- Body class for easy theming
-- Breadcrumb
-- Archive page (by year, year-month, or year-month-day)
-- JSON API
-- OPML
-- RSS Feed
-- RSS 2.0 Importer (basic)
-- Sitemap.xml
-- Archive and Tag Cloud Widget
-- SEO Friendly URLs
-- Teaser thumbnail for images and Youtube videos
-- Responsive Design
-- User Roles
-- Online Backup
-- File Caching
-- Auto Update
-- Post Draft
-- i18n
+- tcp connection procedure
+- loss simulation
+- loss recovery management
+- packet buffering over IP
+- Adaptation of the RRT
+- STOP AND WAIT
 
-Requirements
-------------
-HTMLy requires PHP 5.3 or greater and php-xml package.
-
-Installations
--------------
-If you have an OpenSSL enabled server (usually enabled by default), use the [installer.php](https://github.com/danpros/htmly/releases/latest) and read the following [instructions](https://docs.htmly.com/basics/installations) to get started. If you don't have OpenSSL, please download the latest version, extract it, then upload the extracted files to your server. Also, make sure the installation folder is writeable by your server.
-
-Configurations
---------------
-Set written permission for the `cache` and `content` directories.
 
 Rename `config.ini.example` inside the `config` folder to `config.ini` (or you can create a new `config/config.ini` file) then change the site settings there.
 
