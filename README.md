@@ -42,7 +42,9 @@ Features
 **Final Version**
 -----------------
 -Connection phase (since v4).
+
 -Negotiation of the percentage of loss allowed (this negotiation is added in the header during the connection phase).
+
 -Calculation of the RTT and adaptation of the value during communication (the maximum value is set here to 1ms as we are in local host).
    (at home with the ping localhost I have a rtt close to 0.43ms)
    in real communication will have to change the max. value and adapt to the network specification.
